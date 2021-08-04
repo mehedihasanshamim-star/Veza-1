@@ -1,0 +1,56 @@
+.find-people {
+    padding-bottom: 150px;
+
+    .find-people-text {
+        @media #{$large_mobile}{
+            margin-top: 30px;
+        }
+        @media #{$small_mobile}{
+            margin-top: 30px;
+        }
+        @media #{$x_small_mobile}{
+            margin-top: 30px;
+        }
+        @media #{$tab} {
+            h4 {
+                font-size: 30px;
+            }
+        }
+
+        .people-btn {
+            @extend %common-btn;
+            margin-top: 40px;
+
+            @media #{$tab} {
+                margin-top: 15px;
+            }
+        }
+
+        .people-btn.people-btn-2 {
+            background: $white;
+            color: $section_bg_1;
+            border: 1px solid #e9e7f1;
+
+            i {
+                margin-left: 30px;
+            }
+
+            &:hover {
+                color: $white;
+                background: #00e7ff;
+                background: -moz-linear-gradient(left, #00e7ff 0%, #0077ff 100%);
+                background: -webkit-linear-gradient(left, #00e7ff 0%, #0077ff 100%);
+                background: linear-gradient(to right, #00e7ff 0%, #0077ff 100%);
+                filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00e7ff', endColorstr='#0077ff', GradientType=1);
+            }
+        }
+    }
+}
+
+.mt-140 {
+    margin-top: 140px;
+
+    @media #{$x_small_mobile} {
+        margin-top: 90px;
+    }
+}

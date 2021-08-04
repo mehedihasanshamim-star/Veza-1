@@ -1,0 +1,92 @@
+.social-network{
+    padding-top: 100px;
+    background-color: #f7faff;
+    @media #{$extra_big_screen}{
+        padding: 100px 0px;
+    }
+    @media #{$big_screen}{
+        padding: 100px 0px;
+    }
+    @media #{$tab}{
+       padding-bottom: 100px;
+    }
+    @media #{$medium_device}{
+        padding: 100px 0;
+    }
+}
+
+.social-network-text{
+    @media #{$tab}{
+        text-align: center;
+        padding-top: 50px;
+    }
+    @media #{$x_small_mobile}{
+       padding-top: 30px;
+    }
+    .social-network-title{
+        margin-bottom: 30px;
+        @media #{$medium_device}{
+            margin-bottom: 30px;
+        }
+        @media #{$tab}{
+            margin-bottom: 16px;
+        }
+    }
+    .social-network-sub-hadding{
+        font-size: 24px;
+        font-weight: 600;
+        margin-bottom: 20px;
+        @media #{$medium_device}{
+            margin-bottom: 20px;
+        }
+        @media #{$x_small_mobile}{
+            font-size: 20px;
+        }
+        @media #{$tab}{
+            margin-bottom: 16px;
+        }
+    }
+    .social-description{
+        margin-bottom: 46px;
+        font-size: 18px;
+        @media #{$medium_device}{
+            margin-bottom: 18px;
+        }
+        @media #{$x_small_mobile}{
+            margin-bottom: 30px;
+        }
+    }
+    .social-btn{
+        @extend %common-btn;
+    }
+}
+.social-network-img{
+    margin-right: -357px;
+    @media #{$extra_big_screen}{
+        margin-right: 0;
+    }
+    @media #{$big_screen}{
+        margin-right: 0;
+    }
+    @media #{$tab}{
+        margin-right: 0;
+    }
+    @media #{$medium_device}{
+        margin-right: 0;
+    }
+    img{
+        padding-left: 56px;
+        @media #{$extra_big_screen}{
+            padding-left: 0;
+        }
+        @media #{$big_screen}{
+            padding-left: 0;
+        }
+        @media #{$tab}{
+            padding-left: 0;
+        }
+        @media #{$medium_device}{
+            padding-left: 0;
+        }
+    }
+}

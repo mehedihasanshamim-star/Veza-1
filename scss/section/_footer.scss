@@ -1,0 +1,70 @@
+.footer-section{
+    height: 770px;
+    background-image: url(../img/footer-bg-2.png);
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    overflow-x: hidden;
+    position: relative;
+    width: 100%;
+    z-index: 9;
+    overflow: hidden;
+    clear: both;
+    @media #{$medium_device}{
+        height: 500px;
+    }
+    @media #{$tab}{
+        height: 440px;
+    }
+    @media #{$x_small_mobile}{
+        height: 200px;
+        overflow: hidden;
+    }
+    .plane{
+        position: absolute;
+        top: 135px;
+        left: 0px;
+        height: 57px;
+        width: 545px;
+        background-repeat: no-repeat;
+        background-image: url(../img/plan-3.png);
+        animation: plan 7s linear infinite;
+        @media #{$medium_device}{
+            display: none;
+        }
+        @media #{$tab}{
+            display: none;
+        }
+       
+    }
+    .blown-1{
+        position: absolute;
+        top: 50%;
+        right: 10%;
+        width: 70px;
+        height: 96px;
+        background-repeat: no-repeat;
+        background-image: url(../img/blown-1.png);
+        animation: blown 10s linear infinite;
+    }
+    .blown-2{
+        position: absolute;
+        top:  20%;
+        right: 30%;
+        width: 75px;
+        height: 96px;
+        background-repeat: no-repeat;
+        background-image: url(../img/blown-2.png);
+        animation: blown 15s linear infinite;
+    }
+    .blown-3{
+        position: absolute;
+        top:  60%;
+        left: 25%;
+        width: 75px;
+        height: 96px;
+        background-repeat: no-repeat;
+        background-image: url(../img/blown-1.png);
+        animation: blown 20s linear infinite;
+    }
+}

@@ -1,0 +1,114 @@
+.influencers {
+    padding: 150px 0;
+    background-color: $white;
+    @media #{$tab}{
+        padding: 100px 0;
+        padding-bottom: 70px;
+    }
+}
+
+.influencer-title {
+    letter-spacing: .5px;
+    margin-bottom: 50px;
+}
+
+.common-form {
+    position: relative;
+
+    &::after {
+        position: absolute;
+        content: "\f002";
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        color: #0077ff;
+        left: 20px;
+        font-size: 30px;
+        top: 50%;
+        transform: translateY(-50%);
+        @media #{$x_small_mobile}{
+            font-size: 12px;
+        }
+    }
+
+    input {
+        padding: 20px 30px;
+        border-radius: 30px !important;
+        padding-left: 65px;
+        @media #{$x_small_mobile}{
+            font-size: 12px;
+            padding-left: 35px;
+        }
+    }
+
+    button {
+        @extend %common-btn;
+        border-radius: 30px !important;
+        position: absolute !important;
+        right: 5px;
+        top: 50%;
+        padding-left: 52px;
+        padding-right: 52px;
+        z-index: 1 !important;
+        box-shadow: none;
+        border: 0;
+        transform: translateY(-50%);
+        @media #{$small_mobile}{
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+        @media #{$x_small_mobile}{
+            font-size: 15px;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+    }
+}
+
+.common-form .form-control:focus {
+    z-index: 0 !important;
+    border: 1px solid #ced4da;
+}
+
+.single-influencer {
+    background-color: $white;
+    border-radius: 16px;
+    padding: 10px;
+    display: block;
+    box-shadow: 0px 10px 25px #68677710;
+    @media #{$small_mobile}{
+        margin-bottom: 30px;
+    }
+    @media #{$x_small_mobile}{
+        margin-bottom: 30px;
+    }
+    &:focus{
+        box-shadow: 0px 10px 25px #68677710;
+    }
+
+    .influencer-box {
+        text-align: center;
+        height: 80px;
+        width: 80px;
+        line-height: 80px;
+        border-radius: 8px;
+        margin-right: 40px;
+        transition: .4s;
+        background-color: #ccefff; 
+    }
+    .single-influecer-text{
+        font-size: 24px;
+        @media #{$large_mobile}{
+            font-size: 20px;
+        }
+    }
+    &:hover{
+        .influencer-box{
+            img{
+                filter:  brightness(0) invert(1);
+            }
+        }
+    }
+}
+.mt-50{
+    margin-top: 50px;
+}
